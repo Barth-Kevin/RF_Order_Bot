@@ -23,11 +23,12 @@ ${INPUT_CSV-test}    /input/quickorder.csv
 # Login
 # [Documentation]   Login to the website
 # [Tags]   Login
+# [Arguments]   ${EMAIL}   ${PASSWORD}
 # Open Browser    headless=${False}    browser=${BROWSER_TYPE}    pause_on_failure=${True}
 
 
 
-Bestellbot_v.0.1
+Orderbot
     [Documentation]    Bestellbot für den Einkauf
     [Tags]    Einkauf
     ${table}=    Read table from CSV    ${INPUT_CSV-test}    encoding=UTF-8
